@@ -30,7 +30,7 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
     <style>
     .arrows {
       font-size:70px;
-      color:#ccffb3;
+      color:#ffebcd;
     }
     .circularArrows {
       font-size:80px;
@@ -59,8 +59,8 @@ const char* htmlHomePage PROGMEM = R"HTMLHOMEPAGE(
   </head>
   <body class="noselect" align="center" style="background-color:white">
      
-    <h1 style="color: #00ff99;text-align:center;">Nhóm 54</h1>
-    <h2 style="color: #00ff99;text-align:center;">Điều Khiển Xe &#128663;</h2>
+    <h1 style="color: #000080;text-align:center;">Nhóm 54</h1>
+    <h2 style="color: #2f4f4f;text-align:center;">Điều Khiển Xe &#128663;</h2>
     
     <table id="mainTable" style="width:400px;margin:auto;table-layout:fixed" CELLSPACING=10>
       <tr>
@@ -310,7 +310,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case BACKWARD:
@@ -318,7 +317,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, -MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case LEFT:
@@ -326,7 +324,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case RIGHT:
@@ -334,7 +331,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, -MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case FORWARD_LEFT:
@@ -342,7 +338,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, STOP);
       rotateMotor(FRONT_LEFT_MOTOR, STOP);
       rotateMotor(BACK_LEFT_MOTOR, MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case FORWARD_RIGHT:
@@ -350,7 +345,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, STOP);
-      delay(100);
       break;
   
     case BACKWARD_LEFT:
@@ -358,7 +352,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, STOP);
-      delay(100);
       break;
   
     case BACKWARD_RIGHT:
@@ -366,7 +359,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, STOP);
       rotateMotor(FRONT_LEFT_MOTOR, STOP);
       rotateMotor(BACK_LEFT_MOTOR, -MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case TURN_LEFT:
@@ -374,7 +366,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, -MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case TURN_RIGHT:
@@ -382,7 +373,6 @@ void processCarMovement2(String inputValue)
       rotateMotor(BACK_RIGHT_MOTOR, -MAX_MOTOR_SPEED);
       rotateMotor(FRONT_LEFT_MOTOR, MAX_MOTOR_SPEED);
       rotateMotor(BACK_LEFT_MOTOR, MAX_MOTOR_SPEED);
-      delay(100);
       break;
   
     case STOP:
